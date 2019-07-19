@@ -1,0 +1,57 @@
+<import src="../../components/toast/toast.axml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class="view-warp">
+  <eui-input 
+    name="pledgeBalance" 
+    title="报备金额(元)" 
+    money="{{true}}" 
+    required="{{true}}" 
+    placeholder="请输入报备金额"
+    reg="{{inputValidate.downArrears.reportMoney.reg}}"
+    errorTips="{{inputValidate.downArrears.reportMoney.tips}}"
+    valueKey="downArrears.reportMoney"
+    value="{{downArrears.reportMoney}}"
+    onInputFocus="inputFocus"
+    onInputBlur="inputBlur"
+    onGetValue="onGetValue" />
+  
+  <eui-input 
+    title="{{(downArrears.isBatchLoan === 'N' ? '预计' : '') + '批贷金额'}}" 
+    placeholder="请输入"
+    money="{{true}}" 
+    required="{{true}}"
+    reg="{{inputValidate.downArrears.batchLoanAmount.reg}}"
+    min="{{inputValidate.downArrears.batchLoanAmount.min}}"
+    max="{{inputValidate.downArrears.batchLoanAmount.max}}"
+    value="{{downArrears.batchLoanAmount}}"
+    password="{{true}}"
+    errorTips="{{inputValidate.downArrears.batchLoanAmount.tips}}"
+    valueKey="downArrears.batchLoanAmount"
+    onGetValue="onGetValue"/>
+
+  <eui-input 
+    title="{{(downArrears.isBatchLoan === 'N' ? '预计' : '') + '批贷利率(选填,%)'}}" 
+    placeholder="请输入"
+    money="{{true}}"
+    structures="upper"
+    errorFlag="{{inputValidate.downArrears.batchLoanRate.errorFlag}}" 
+    value="{{downArrears.batchLoanRate}}" 
+    valueKey="downArrears.batchLoanRate" 
+    onInputFocus="inputFocus" 
+    onInputBlur="inputBlur" 
+    onGetValue="onGetValue"/>
+    
+  <eui-input 
+    title="{{(downArrears.isBatchLoan === 'N' ? '预计' : '') + '批贷期限(月)'}}" 
+    placeholder="请输入" 
+    errorFlag="{{inputValidate.downArrears.batchLoanTerm.errorFlag}}" 
+    value="{{downArrears.batchLoanTerm}}" 
+    password="{{true}}"
+    valueKey="downArrears.batchLoanTerm" 
+    onInputFocus="inputFocus" 
+    onInputBlur="inputBlur" 
+    onGetValue="onGetValue"/>
+    <view>
+      <button size="default" type="primary" onTap="submitInfo">提交</button>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "toast",
+  "usingComponents": {
+    "eui-toast": "/components/toast/toast"
+  }
+}

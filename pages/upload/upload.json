@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "upload",
+  "usingComponents": {
+    "eui-upload": "/components/upload/upload"
+  }
+}

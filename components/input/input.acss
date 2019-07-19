@@ -1,0 +1,60 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+.eui-input-block-label {
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.eui-input-block-label text:nth-child(2) {
+  padding-left: 10rpx;
+  color: #f56c6c;
+}
+.eui-input-content {
+  flex: 1;
+  padding-left: 15px;
+  text-align: right;
+}
+
+.eui-input-upper {
+  display: block;
+  text-align: left;
+}
+.eui-input-down {
+  text-align: left;
+  padding-left: 0;
+}
+.eui-input-moneylevel {
+  text-align: right;
+  padding-right: 0.2rem;
+  color: #909399;
+  font-size: 20rpx;
+}
+.eui-input-moneylevel-uppper {
+  text-align: left;
+  padding-left: 30rpx;
+}
+
+.eui-input-content .eui-input-block-large {
+  font-size: 32rpx;
+}
+
+.eui-input-error {
+  border-bottom: 1rpx solid red;
+}
+.eui-input-block {
+  font-size: 28rpx;
+  width: 100%;
+  word-break: break-all;
+}
+.eui-input-view {
+  color: #000;
+  display: inline-block;
+  line-height: 27px;
+  width: 100%;
+}
+.eui-input-gray {
+  color: rgba(0, 0, 0, 0.3)!important;
+}
+
+

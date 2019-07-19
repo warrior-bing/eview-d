@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "数据校验",
+  "usingComponents": {
+    "eui-area-picker": "/components/areaPicker/areaPicker",
+    "eui-input": "/components/input/input",
+    "eui-checkbox": "/components/checkbox/checkbox",
+    "eui-date-picker": "/components/datePicker/datePicker",
+    "eui-picker": "/components/picker/picker",
+    "eui-textarea": "/components/textarea/textarea",
+    "eui-view": "/components/view/view"
+  }
+}

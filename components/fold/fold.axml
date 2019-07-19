@@ -1,0 +1,12 @@
+<view class="eui-fold {{className}} {{flag ? 'fold-active' : ''}}">
+  <view class="eui-fold-title" onTap="showContent" data-index="{{index}}">
+    <view>
+      <view>{{title}}</view>
+      <view class="eui-fold-sub-title" a:if="{{subTitle}}">{{subTitle}}</view>
+    </view>
+    <view class="eui-fold-arrow iconfont icon-right1"></view>
+  </view>
+  <view class="eui-fold-content" a:if="{{flag}}">
+    <slot></slot>
+  </view>
+</view>

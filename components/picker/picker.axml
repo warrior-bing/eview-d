@@ -1,0 +1,17 @@
+<view class="eui-global-block {{componentErrorFlag ? 'eui-picker-error' : ''}} {{structures === 'upper' ? 'eui-block-column' : ''}}">
+  <label class="eui-global-block-label eui-picker-lable" style="{{labelWidth ? 'width:' + labelWidth + 'rpx' : ''}}">
+    <text>{{title}}</text>
+    <text a:if="{{required && !disabled}}">*</text>
+  </label>
+  <picker a:if="{{!disabled}}" onChange="bindObjPickerChange" disabled="{{disabled}}" value="{{pickerIndex}}" range="{{data}}" range-key="name" data-valueKey="{{valueKey}}" data-code="{{code}}" data-index="{{index}}">
+    <view a:if="{{dataFlag}}" class="eui-picker {{data[pickerIndex].name ? 'black' : 'gray'}} {{structures === 'upper' ? 'eui-picker-flex-betwwen' : ''}}">
+      {{text ? text : (data[pickerIndex].name ? data[pickerIndex].name : placeholder)}}
+      <view class="iconfont icon-right1 eui-icon-picker-right"  a:if="{{!disabled}}" ></view>
+    </view>
+    <view a:elif="{{!dataFlag}}" class="eui-picker gray">
+      暂无{{title}}
+    </view>
+  </picker>
+  <view a:if="{{disabled}}" class="eui-picker gray {{structures === 'upper' ? 'eui-picker-flex-betwwen' : ''}}">{{currentLabel === '' ? value : currentLabel}}</view>
+  <!-- <image a:if="{{!disabled}}" class="icon-picker-right" mode="widthFix" src="/style/images/icon-right.png"/> -->
+</view>   

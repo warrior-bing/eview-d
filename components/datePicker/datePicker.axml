@@ -1,0 +1,15 @@
+<view class="eui-global-block {{componentErrorFlag ? 'eui-date-error' : ''}} {{ structures === 'upper' ? 'eui-date-no-flex' : ''}}">
+  <label class="eui-date-lable" style="{{labelWidth ? 'width:' + labelWidth + 'rpx' : ''}}">
+    <text>{{title}}</text>
+    <text class="eui-date-required" a:if="{{!disabled && required}}">*</text>
+  </label>
+  <view a:if="{{!disabled}}" class="{{ structures === 'upper' ? 'eui-date-upper' : 'eui-date-box'}}" data-valueKey="{{valueKey}}" onTap="onDateChange">  
+    <view class="eui-date-value {{value ? 'black' : 'gray'}}">
+      {{value ? value : placeholder}}
+    </view>
+    <view class="iconfont icon-calendar_icon eui-date-icon"></view>
+  </view>
+  <view class="gray {{ structures === 'upper' ? 'eui-date-upper' : ''}}" a:if="{{disabled}}">
+    {{value}}
+  </view>
+</view>

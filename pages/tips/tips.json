@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "tips",
+  "usingComponents": {
+    "eui-tips": "/components/tips/tips"
+  }
+}

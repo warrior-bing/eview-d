@@ -1,0 +1,15 @@
+.view-warp {
+  width: 100%;
+  margin: 15rpx;
+}
+
+.detail-module-text {
+  color: #000;
+  margin-top: 20rpx;
+  font-weight: 600;
+}
+
+.detail-module-romove {
+  width: 28rpx;
+  
+}

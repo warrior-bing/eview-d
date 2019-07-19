@@ -1,0 +1,15 @@
+<view class="view-warp">
+  <eui-checkbox title="抵押情况的个人惟息加测奈" type="radio" labelWidth="340" radioType="cancel" data="{{mortgageSituationData}}" valueKey="apply.mortgageSituation" value="{{apply.mortgageSituation}}" onChecked="onCheckedChange"/>
+  <eui-checkbox 
+    title="抵押情况view" 
+    error="{{true}}" 
+    disabled="{{true}}" 
+    type="radio" 
+    radioType="cancel" 
+    data="{{mortgageSituationData}}" 
+    valueKey="apply.mortgageSituation" 
+    value="{{apply.mortgageSituation}}" 
+    onChecked="onCheckedChange"/>
+  <eui-checkbox title="产品类型" structures="upper" required="{{true}}" type="checkbox" data="{{productTypeData}}" valueKey="apply.productType" value="{{apply.productType}}" onChecked="onCheckedChange"/>
+  <eui-checkbox title="产品类型只读" structures="upper" type="checkbox" disabled="{{true}}" data="{{productTypeData}}" valueKey="apply.productType" value="{{apply.productType}}" onChecked="onCheckedChange"/>
+</view>

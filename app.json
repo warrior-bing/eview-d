@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/picker/picker",
+    "pages/popup/popup",
+    "pages/tab/tab",
+    "pages/textarea/textarea",
+    "pages/tips/tips",
+    "pages/upload/upload",
+    "pages/view/view",
+    "pages/checkbox/checkbox",
+    "pages/datepicker/datepicker",
+    "pages/dialog/dialog",
+    "pages/fold/fold",
+    "pages/fuzzy/fuzzy",
+    "pages/input/input",
+    "pages/areapicker/areapicker",
+    "pages/toast/toast",
+    "pages/validate/validate",
+    "pages/pathview/pathview"
+  ],
+  "window": {
+    "defaultTitle": "钉钉应用组件库（金融方向）",
+    "backgroundColor": "#F5F5F9"
+  },
+  "debug": true
+}

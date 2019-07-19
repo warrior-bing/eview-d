@@ -1,0 +1,16 @@
+<view class="eui-popup" a:if="{{flag}}">
+  <view style="{{`height: ${height};`}}" class="eui-popup-container">
+    <view class="eui-popup-title">
+      <text a:if="{{closeFlag}}"></text>
+      <text class="eui-popup-btn eui-popup-btn-cancel" a:if="{{!closeFlag}}" catchTap="onCancel">取消</text>
+      <text class="eui-popup-title-text">{{title}}</text>
+      <text class="eui-popup-btn eui-popup-btn-confirm" a:if="{{!closeFlag}}" catchTap="onConfirm">确认</text>
+      <view catchTap="onClose" class="eui-popup-close">
+        <image a:if="{{closeFlag}}" class="eui-icon-remove" mode="widthFix" src="../../style/images/icon-remove.png"/>
+      </view>
+    </view>
+    <view class="eui-popup-content">
+      <slot></slot>
+    </view>
+  </view>
+</view>

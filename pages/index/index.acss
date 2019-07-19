@@ -1,0 +1,17 @@
+.example_box {
+  display: flex;
+  margin: 30rpx;
+  flex-wrap: wrap;
+  
+}
+.example_style {
+  margin: 10rpx;
+  font-size: 32rpx;
+  width: 200rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  border: 1rpx solid #6999D1;
+  color: #6999D1;
+  border-radius: 10rpx;
+}

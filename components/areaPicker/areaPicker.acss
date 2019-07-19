@@ -1,0 +1,71 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-area-picker {
+  padding-right: 30rpx;
+}
+
+.eui-icon-area-picker {
+  position: absolute;
+  right: 0;
+  font-size: 30rpx;
+  color: rgb(38, 162, 255);
+}
+
+.eui-mask-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.eui-pv-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+
+.eui-pv-title {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1rpx solid #e8e8e8;
+  color: rgb(53, 169, 255);
+}
+
+.eui-pv-title>text {
+  width: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.eui-picker-icon-rotate {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.eui-picker-icon-normal {
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+
+.eui-area-picker-error {
+  border-bottom: 1px solid red;
+}
+
+.eui-global-block-label {
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.eui-global-block-label text:nth-child(2) {
+  padding-left: 10rpx;
+  color: #f56c6c;
+}

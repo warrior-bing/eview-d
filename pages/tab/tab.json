@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "tab",
+  "usingComponents": {
+    "eui-tab": "/components/tab/tab"
+  }
+}

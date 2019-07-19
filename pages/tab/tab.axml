@@ -1,0 +1,9 @@
+<view class="view-warp">
+  <eui-tab itemData="{{itemData}}" current="{{current}}" onTabItemTap="onTabItemTap" />
+  <view class="tab1" a:if="{{current === 'tab1'}}">
+    hahaha
+  </view>
+  <view class="tab2" a:if="{{current === 'tab2'}}">
+    hahahaha哈合合俣哈
+  </view>
+</view>

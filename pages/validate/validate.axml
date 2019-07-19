@@ -1,0 +1,76 @@
+<import src="../../components/toast/toast.axml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class="validate-warp">
+  <eui-area-picker 
+    title="地址" 
+    placeholder="请选择地址" 
+    value="{{formData1.address}}"
+    valueKey="formData1.address"
+    required="{{validateRules.address.required}}"
+    isArea="1"
+    allData="{{allData}}"
+    disabled="{{false}}"
+    onGetAreaValue="onGetAreaValue"/>
+  <eui-checkbox 
+    title="产品类型" 
+    required="{{validateRules.productType.required}}"
+    type="checkbox" 
+    data="{{productTypeData}}" 
+    valueKey="formData1.productType" 
+    value="{{formData1.productType}}" 
+    onChecked="onCheckedChange" />
+  <eui-view title="view3" value="{{formData1.value3}}"/>
+  <eui-date-picker 
+    title="预计用款日期"
+    disabled="{{true}}"
+    required="{{validateRules.planDate.required}}"
+    placeholder="请选择用款日期" 
+    value="{{formData1.planDate}}" 
+    currentDate="{{formData1.planDate}}" 
+    valueKey="formData1.planDate" 
+    onGetDateValue="onGetDateValue" />
+
+  <eui-input 
+    title="批贷金额" 
+    placeholder="请输入"
+    disabled="{{true}}"
+    required="{{validateRules.batchLoanAmount.required}}"
+    reg="{{validateRules.batchLoanAmount.reg}}"
+    min="{{validateRules.batchLoanAmount.min}}"
+    max="{{validateRules.batchLoanAmount.max}}"
+    value="{{formData1.batchLoanAmount}}"
+    errorTips="{{validateRules.batchLoanAmount.tips}}"
+    valueKey="formData1.batchLoanAmount"
+    onGetValue="onGetValue"/>
+  <eui-picker 
+    labelWidth="500"
+    required="{{validateRules.picker.required}}"
+    title="身份类型" 
+    data="{{pickerData}}" 
+    valueKey="formData1.picker"
+    value="{{formData1.picker}}" 
+    placeholder="请选择" 
+    onGetPickerValue="onGetPickerValue"/>
+  <eui-textarea 
+    title="意见建议" 
+    required="{{validateRules.remark.required}}" 
+    placeholder="请输入内容"
+    valueKey="formData1.remark" 
+    value="{{formData1.remark}}" 
+    onInput="getTextValue" 
+    />
+  <view>
+    <eui-textarea 
+    a:if="{{condition}}"
+    title="意见建议" 
+    required="{{validateRules.remark.required}}" 
+    placeholder="请输入内容"
+    valueKey="formData1.remark" 
+    value="{{formData1.remark}}" 
+    onInput="getTextValue" 
+    />
+  <view>
+    <button class="btn-validate" onTap="submitInfo" >Submit</button>
+  </view>
+  
+</view>

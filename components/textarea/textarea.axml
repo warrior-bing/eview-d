@@ -1,0 +1,10 @@
+<view class="eui-textarea-block border-none {{componentErrorFlag ? 'error' : ''}}">
+  <label class="eui-textarea-label">
+    <text>{{title}}</text>
+    <text class="eui-textarea-required" a:if="{{required}}">*</text>
+  </label>
+  <textarea class="eui-textarea {{className}} {{disabled ? 'gray' : ''}}" placeholder="{{placeholder}}" 
+  disabled="{{disabled}}" data-required="{{required}}" value="{{value}}" name="{{name}}" 
+  maxlength="{{maxlength}}" auto-height="{{autoHeight}}" data-busData="{{busData}}" data-valueKey="{{valueKey}}"
+  onFocus="onFocus" onBlur="onBlur" onInput="onInput" />
+</view>

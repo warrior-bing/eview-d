@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "view",
+  "usingComponents": {
+    "eui-path-view": "/components/pathView/pathView"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "picker",
+  "usingComponents": {
+    "eui-picker": "/components/picker/picker"
+  }
+}

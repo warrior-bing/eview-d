@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "checkbox",
+  "usingComponents": {
+    "eui-checkbox": "/components/checkbox/checkbox"
+  }
+}

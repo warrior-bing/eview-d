@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "datePicker",
+  "usingComponents": {
+    "eui-date-picker": "/components/datePicker/datePicker"
+  }
+}

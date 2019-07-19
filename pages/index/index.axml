@@ -1,0 +1,12 @@
+<view>
+  <view class="example_box">
+    <view 
+      class="example_style" 
+      a:for="{{examples}}" 
+      a:for-item="exitem" 
+      a:for-index="ex_index" 
+      data-path="{{exitem.path}}"
+      onTap="lookExample">{{exitem.name}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<template name="toast">
+  <view class="eui-toast-mask {{!mask ? 'eui-toast-opacity' : ''}}" a:if="{{ type === 'loading' && isHide }}"></view>
+  <view class="eui-class eui-toast {{ type !== 'loading' ? 'eui-toast-background' : ''}} {{ location === 'middle' ? '' : ( location === 'bottom' ? 'eui-toast-bottom' : 'eui-toast-top')  }}" a:if="{{ isHide }}">
+    <view class="eui-toast-type"  a:if="{{ type === 'loading' }}">
+      <view class="eui-toast-icon eui-toast-loading"></view>
+    </view>
+    <view class="eui-toast-content" a:if="{{ content }}">{{ content }}</view>
+  </view>
+</template>
+

@@ -1,0 +1,169 @@
+input {
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input::-webkit-input-placeholder {
+  font-size: 28rpx!important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input::-moz-placeholder {
+  font-size: 28rpx!important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input::-moz-placeholder {
+  font-size: 28rpx!important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input::-ms-input-placeholder {
+  font-size: 28rpx!important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  border: none;
+  height: 70rpx;
+  margin: 12rpx 0;
+  padding: 0 20rpx;
+  color: #fff;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 0;
+  border: none;
+  font-size: 28rpx;
+}
+
+.small {
+  font-size: 24rpx;
+}
+
+.normal {
+  font-size: 28rpx;
+}
+
+.medium {
+  font-size: 32rpx;
+}
+
+.large {
+  font-size: 36rpx;
+}
+
+.huge {
+  font-size: 48rpx;
+}
+
+.giant {
+  font-size: 56rpx;
+}
+
+.z-level-1 {
+  z-index: 997;
+}
+
+.z-level-2 {
+  z-index: 998;
+}
+
+.z-level-3 {
+  z-index: 999;
+}
+
+.gray {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.black {
+  color: #000;
+}
+
+.primary {
+  color: #26a2ff;
+}
+
+.success {
+  color: #67c23a;
+}
+
+.warning {
+  color: #e6a23c;
+}
+
+.danger {
+  color: #f56c6c;
+}
+
+.primary-bg {
+  background-color: #26a2ff;
+}
+
+.success-bg {
+  background-color: #67c23a;
+}
+
+.warning-bg {
+  background-color: #e6a23c;
+}
+
+.danger-bg {
+  background-color: #f56c6c;
+}
+
+.gray-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.m8 {
+  margin: 16rpx;
+}
+
+.m10 {
+  margin: 20rpx;
+}
+
+.m15 {
+  margin: 30rpx;
+}
+
+.m20 {
+  margin: 40rpx;
+}
+
+.p8 {
+  padding: 16rpx;
+}
+
+.p10 {
+  padding: 20rpx;
+}
+
+.p15 {
+  padding: 30rpx;
+}
+
+.p20 {
+  padding: 40rpx;
+}
+
+.border {
+  border: 1px solid #e8e8e8;
+}

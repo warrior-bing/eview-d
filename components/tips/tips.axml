@@ -1,0 +1,5 @@
+<view class="eui-tip-container-header-tips">
+  <view class="iconfont icon-notice eui-tip-container-header-notice"></view>
+  <text class="eui-tip-ontainer-header-text">{{text}}</text>
+  <view class="iconfont icon-quxiao eui-tip-container-header-remove" onTap="removeTips" a:if="{{removeFlag}}"></view>
+</view>

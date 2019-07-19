@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "fold",
+  "usingComponents": {
+    "eui-fold": "/components/fold/fold"
+  }
+}

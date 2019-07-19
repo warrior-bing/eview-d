@@ -1,0 +1,13 @@
+.validate-warp {
+  width: 100%;
+  margin: 15rpx;
+  padding: 15rpx;
+  background: #FFFFFF;
+}
+.btn-validate {
+  width: 80%;
+  height: 60rpx;
+  margin:35rpx auto;
+  background: rgb(38, 162, 255);
+  color: #FFFFFF;
+}

@@ -1,0 +1,4 @@
+.view-warp {
+  width: 100%;
+  padding: 40rpx;
+}

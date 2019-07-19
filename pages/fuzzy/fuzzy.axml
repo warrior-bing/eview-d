@@ -1,0 +1,3 @@
+<view class="view-warp">
+  <eui-fuzzy showMask="{{showMask}}" onGoBack="onGoBack" onSetValue="onSetValue"/>
+</view>

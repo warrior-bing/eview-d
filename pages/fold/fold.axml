@@ -1,0 +1,12 @@
+<view class="view-warp">
+  <eui-fold title="默认收起">
+    <view class="box">
+      <label class="detail-module-text">内容内容内容内容</label>
+    </view>
+  </eui-fold>
+  <eui-fold title="默认展开" subTitle="副标题" collapse="{{true}}">
+    <view class="box">
+      <label class="detail-module-text">内容内容内容内容</label>
+    </view>
+  </eui-fold>
+</view>

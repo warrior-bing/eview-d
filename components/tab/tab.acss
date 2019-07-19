@@ -1,0 +1,19 @@
+.eui-tab-warp {
+  background-color: #fff;
+  display: flex;
+  height: 90rpx;
+  box-sizing: border-box;
+}
+.eui-tab-item {
+  flex: 1;
+  line-height: 90rpx;
+  text-align: center;
+  padding: 0 10rpx;
+  border-bottom: solid 1px #e8e8e8;
+  white-space: nowrap;
+}
+.eui-tab-active {
+  border-bottom: solid 1px #35a9ff;
+  color: #35a9ff;
+  font-weight: bold;
+}

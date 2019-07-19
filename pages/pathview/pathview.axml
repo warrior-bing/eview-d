@@ -1,0 +1,16 @@
+<!--index.axml-->
+<import src="../../components/toast/toast.axml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class="container">
+  <!-- <text class="item">Tree数据</text>
+  <eui-path-view 
+    value="{{value}}"
+    btnTxt='选中本项'
+    selthis="selThis"></eui-path-view> -->
+  <text class="item">传入未转换为树形结构的数组</text>
+  <eui-path-view 
+    value="{{unnormalizedValue}}"
+    btnTxt='选中本项'
+    contentKey="name"
+    catchTap="selThis"></eui-path-view>
+</view>

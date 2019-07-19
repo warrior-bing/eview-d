@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "areapicker",
+  "usingComponents": {
+    "eui-area-picker": "/components/areaPicker/areaPicker"
+  }
+}

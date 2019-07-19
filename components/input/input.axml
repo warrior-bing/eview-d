@@ -1,0 +1,32 @@
+<view class="eui-global-block {{componentErrorFlag ? 'eui-input-error' : ''}} {{structures == 'upper' ? 'eui-input-upper' : ''}}">
+  <label class="eui-input-block-label">
+    <text>{{title}}</text>
+    <text a:if="{{required && !disabled}}">*</text>
+  </label>
+  <view class="eui-input-content {{structures == 'upper' ? 'eui-input-down' : ''}}">
+    <view class="eui-input-moneylevel {{structures == 'upper' ? 'eui-input-moneylevel-uppper' : ''}}" a:if="{{money && !closeLevel}}">{{moneyLevel}}</view>
+    <view a:if="{{showinput}}" class="eui-input-view {{disabled ? 'eui-input-gray' : ''}} {{money ? 'eui-input-block-large' : ''}}" onTap="showInput">{{inputvalue}}</view>
+    <input 
+      a:if="{{!showinput}}"
+      class="eui-input-block {{disabled ? 'eui-input-gray' : ''}} {{money ? 'eui-input-block-large' : ''}}" 
+      placeholder="{{disabled && !value ? '未填写' : placeholder}}"
+      data-required="{{required}}"
+      disabled="{{disabled}}"
+      value="{{value}}"
+      password="{{password}}"
+      name="{{name}}"
+      placeholder-style='font-size:28rpx;'
+      data-valueKey="{{valueKey}}" 
+      data-cutBit="{{cutBit}}" 
+      data-decimal="{{decimal}}" 
+      data-errorFlag="{{errorFlag}}" 
+      focus="{{focus}}" 
+      onInput='getValue' 
+      onBlur="inputBlur" 
+      onFocus="inputFocus" />
+    <text a:if="{{unit}}">{{unit}}</text>
+    <!--<view class="detail-module-item-tips">
+      {{upper}}</view> -->
+  </view>
+  <slot></slot>
+</view>

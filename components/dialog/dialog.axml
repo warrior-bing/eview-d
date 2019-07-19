@@ -1,0 +1,14 @@
+<view class="eui-dialog" a:if="{{show}}">
+  <view style="{{`width: ${width};`}}" class="eui-dialog-container {{className}}">
+    <view class="eui-dialog-title">
+      <text class="eui-dialog-title-text">{{title}}</text>
+      <view a:if="{{closeFlag}}" class="eui-dialog-close-btn iconfont icon-chahao" catchTap="onClose"></view>
+    </view>
+    <view class="eui-dialog-content">
+      <slot></slot>
+    </view>
+    <view a:if="{{btnText}}" class="eui-dialog-title-btn">
+      <button class="button normal eui-dialog-btn primary-bg" hover-class="none" catchTap="onHandBtn">{{btnText}}</button>
+    </view>
+  </view>
+</view>

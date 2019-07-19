@@ -1,0 +1,5 @@
+<import src="../../components/toast/toast.axml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view>
+  hahahahhahahah
+</view>

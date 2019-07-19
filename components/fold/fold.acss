@@ -1,0 +1,48 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-fold{
+    width: 100%;
+    font-size: 28rpx;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8rpx;
+    border: 1rpx solid #e8e8e8;
+    padding: 0 20rpx 0 20rpx;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+.eui-fold-title{
+    width: 100%;
+    color: #35a9ff;
+    min-height: 90rpx;
+    border-bottom: 2rpx solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.eui-fold-sub-title {
+    font-weight: normal;
+    color: #666;
+}
+.eui-fold-content{
+  overflow:hidden;
+  transition: all 1s ease;
+}
+
+.eui-fold.fold-active{
+  padding: 0 20rpx 20rpx 20rpx;
+}
+.fold-active .eui-fold-title{
+  border-bottom: 2rpx solid #72c3ff;
+}
+.eui-fold-arrow{
+  transition: all .3s ease;
+  transform: rotate(0deg)
+}
+.fold-active .eui-fold-arrow{
+  transform: rotate(90deg)
+}
+

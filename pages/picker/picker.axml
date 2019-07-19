@@ -1,0 +1,8 @@
+<view class="view-warp">
+  <eui-picker title="picker" required="true" data="{{pickerData}}" value="{{value}}" placeholder="请选择" onGetPickerValue="onGetPickerValue"/>
+  <eui-picker labelWidth="500" disabled="{{true}}" title="阿斯加德好卡仕达卡可是看到爱仕达" required="true" data="{{pickerData}}" value="{{value}}" placeholder="请选择" onGetPickerValue="onGetPickerValue"/>
+  <eui-picker structures="upper" title="picker" error="{{error}}"  required="true" data="{{pickerData}}" value="{{value}}" placeholder="请选择" onGetPickerValue="onGetPickerValue"/>
+  <eui-picker disabled="{{true}}" error="{{error}}" structures="upper" title="picker" required="true" data="{{pickerData}}" value="{{value}}" placeholder="请选择" onGetPickerValue="onGetPickerValue"/>
+  <eui-picker disabled="{{true}}" error="{{error}}" structures="upper" title="picker" required="true" data="{{pickerData}}" value="{{value3}}" placeholder="请选择" onGetPickerValue="onGetPickerValue"/>
+  <button onTap="setValue">修改value</button>
+</view>

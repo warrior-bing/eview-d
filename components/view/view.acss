@@ -1,0 +1,38 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.noInput {
+  color: #000;
+}
+.eui-view-label{
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.eui-view-input{
+  flex: 1;
+  font-size: 28rpx;
+  text-align: right;
+  word-break: break-all;
+}
+.eui-view-unit{
+  font-size: 20rpx;
+  color: rgba(0, 0, 0, 0.4);
+}
+.eui-view-required{
+  padding-left: 10rpx;
+  color: #f56c6c;
+}
+.eui-view-upper{
+  display: block;
+  text-align: left;
+}
+.eui-view-down {
+  text-align: left;
+  margin: 20rpx 0;
+}
+.eui-view-error {
+  border-bottom: 1px solid red;
+}

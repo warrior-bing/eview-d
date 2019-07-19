@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "view",
+  "usingComponents": {
+    "eui-view": "/components/view/view"
+  }
+}

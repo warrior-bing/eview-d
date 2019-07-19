@@ -1,0 +1,16 @@
+<view class="eui-upload-block-column {{border ? '' : 'border-none'}}  {{componentErrorFlag ? 'eui-upload-error' : ''}}">
+  <label class="eui-upload-block-label upload-label">
+    <text>{{title}}</text>
+    <text a:if="{{required}}">*</text>
+  </label>
+  <view class="eui-upload">
+    <view class="eui-upload-list" a:for="{{data}}" key="{{index}}">
+      <view a:if="{{!hide}}" class="eui-icon-delete iconfont icon-component-delete" data-index="{{index}}" data-valueKey="{{valueKey}}" onTap="removeImage" ></view>
+      <image class="image" mode="aspectFill" src="{{detail ? (flag ? item.thumbUrl : item.src) : item.src}}" data-valueKey="{{valueKey}}" data-index="{{index}}" onError="imageError" onLoad="imageLoad" onTap="previewImage"></image>
+    </view>
+    <view a:if="{{loading}}" class="eui-upload-loading">
+      <view class="eui-icon-loading iconfont icon-component-loading"></view>
+    </view>
+    <view a:if="{{!hide && !loading ? (data.length == max ? false : true) : false}}" class="eui-upload-btn" data-valueKey="{{valueKey}}" onTap="getImageUrl">+</view>
+  </view>
+</view>

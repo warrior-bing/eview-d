@@ -1,0 +1,43 @@
+<view class="view-warp">
+  <view class="view-test-button">
+    <button class="button normal popup-btn primary-bg" hover-class="none" onTap="onShowBtn">show default dialog</button>
+  </view>
+
+  <view class="view-test-button">
+    <button class="button normal popup-btn primary-bg" hover-class="none" onTap="onShowBtn">no close dialog</button>
+  </view>
+
+  <eui-dialog 
+    show="{{dialogShow1}}" 
+    closeFlag="{{true}}" 
+    title="Default Dialog" 
+    btnText="确定" 
+    onClose="onClose" 
+    onHandBtn="onClose"
+  >
+    <view class="dialog-warp">
+      <view class="dialog-title">请确认以下几点后再进行操作：</view>
+      <view>1、持卡人姓名、身份证号、银行卡号等是否准确；</view>
+      <view>2、联系方式是否为开户时银行预留手机号；</view>
+      <view>3、输入的短信校验码是否准确；</view>
+      <view>4、不支持信用卡绑定</view>
+    </view>
+  </eui-dialog>
+
+  <eui-dialog 
+    show="{{dialogShow2}}" 
+    closeFlag="{{false}}" 
+    title="No Close Dialog" 
+    btnText="确定" 
+    onClose="onClose" 
+    onHandBtn="onClose"
+  >
+    <view class="dialog-warp">
+      <view class="dialog-title">请确认以下几点后再进行操作：</view>
+      <view>1、持卡人姓名、身份证号、银行卡号等是否准确；</view>
+      <view>2、联系方式是否为开户时银行预留手机号；</view>
+      <view>3、输入的短信校验码是否准确；</view>
+      <view>4、不支持信用卡绑定</view>
+    </view>
+  </eui-dialog>
+</view>

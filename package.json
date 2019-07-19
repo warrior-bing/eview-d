@@ -1,0 +1,27 @@
+{
+  "name": "eview-d",
+  "version": "1.1.0",
+  "description": "This is dingding base UI components",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "eview"
+  ],
+  "keywords": [
+    "component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:warrior-bing/eview-d.git"
+  },
+  "devDependencies": {
+    "rc-tools": "6.x",
+    "lodash.debounce": "^4.0.8"
+  },
+  "bugs": {
+    "url": "https://github.com/warrior-bing/eview-d/issues"
+  },
+  "author": "zhangbing0039@163.com",
+  "license": "MIT"
+}

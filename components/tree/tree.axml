@@ -1,0 +1,11 @@
+<view>
+  <view class="eui-list-view">
+    <view a:for="{{outValue}}" a:key="{{index}}" class="eui-list-view-item" catchTap="toggle" data-text="{{item[contentKey]}}" data-isfolder="{{item.isFolder}}" data-index="{{index}}">
+      <text class="title" space="ensp">{{item[contentKey]}}</text>
+      <text a:if="{{item.isFolder}}" class="tip">{{item.isOpen?'（-）':'（+）'}}</text>
+      <view a:if="{{item.isFolder && item.isOpen}}">
+        <eui-tree value="{{item.children}}"></eui-tree>
+      </view>
+    </view>
+  </view>
+</view>

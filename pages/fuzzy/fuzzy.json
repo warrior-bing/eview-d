@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "fuzzy",
+  "usingComponents": {
+    "eui-fuzzy": "/components/fuzzy/fuzzy"
+  }
+}

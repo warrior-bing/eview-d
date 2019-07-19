@@ -1,0 +1,12 @@
+<view class="{{showMask ? 'show' : 'hide'}}">
+  <view class="mask">
+    <text class="mask-back" onTap="goBack">返回</text>
+    <view class="mask-search">
+      <input id="input" value="{{value}}" onConfirm="doneSearch" onInput="getValue"/>
+      <image class="icon-search" mode="widthFix" src="../../style/images/icon-search.png" onTap="goSearch"/>
+    </view>
+  </view>
+  <view a:if="{{showList}}" class="list">
+    <view a:for="{{communityData}}" class="list-item" data-index="{{index}}" data-item="{{item}}" onTap="setValue">{{item.conName}}</view>
+  </view>
+</view>

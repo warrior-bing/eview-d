@@ -1,0 +1,33 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-textarea-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.eui-textarea {
+  flex: 1;
+  min-height: 200rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #e8e8e8;
+  margin: 10rpx 0 10rpx 0;
+  box-sizing: border-box;
+  padding: 15rpx;
+}
+.eui-textarea-label {
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+.eui-textarea-required{
+  padding-left: 10rpx;
+  color: #f56c6c;
+}
+.border-none{
+  border: 0
+}
+.error {
+  border-bottom: 1rpx solid red;
+}

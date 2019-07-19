@@ -1,0 +1,69 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-checkbox-no-flex {
+  display: block;
+}
+.eui-checkbox-upper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 0 24rpx 0;
+}
+.eui-checkbox-lable {
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+  width: 200rpx;
+}
+.eui-checkbox {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.eui-checkbox>text {
+  min-width: 100rpx;
+  height: 45rpx;
+  padding: 0 20rpx;
+  border-radius: 5rpx;
+  margin-left: 5rpx;
+  margin-bottom: 5rpx;
+  text-align: center;
+  line-height: 45rpx;
+  box-sizing: border-box;
+}
+.eui-checkbox-upper>text {
+  min-width: 100rpx;
+  height: 45rpx;
+  padding: 0 20rpx;
+  border-radius: 5rpx;
+  margin-right: 5rpx;
+  margin-bottom: 5rpx;
+  text-align: center;
+  line-height: 45rpx;
+  box-sizing: border-box;
+}
+.eui-checkbox-active {
+  background: #26a2ff;
+  border: 1rpx solid #26a2ff;
+  color: #fff;
+}
+
+.eui-checkbox-default {
+  border: 1rpx solid #e8e8e8;
+}
+
+.eui-checkbox-disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background: #f0f0f0;
+  border: 1rpx solid #e8e8e8;
+}
+
+.eui-checkbox-required {
+  color: #ff2d2d;
+  padding-left: 15rpx;
+}
+.eui-checkbox-error {
+  border-bottom: solid 1px #ff2d2d;
+}

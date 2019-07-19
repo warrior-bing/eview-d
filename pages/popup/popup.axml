@@ -1,0 +1,7 @@
+<view class="view-warp">
+  <eui-popup flag="{{flag}}" title="测试" closeFlag="{{false}}" onConfirm="onConfirm" onCancel="onCancel" onClose="onClose">
+    <eui-view title="测试" value="哈哈哈"></eui-view>
+  </eui-popup>
+
+  <button type="primary" onTap="onShowPopup"> 显示 </button>
+</view>

@@ -1,0 +1,6 @@
+.view-warp {
+  width: 100%;
+  margin: 15rpx;
+  padding: 10rpx;
+  background-color: white;
+}

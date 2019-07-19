@@ -1,0 +1,7 @@
+<view class="view-warp">
+  <eui-textarea title="默认textarea" required="true" placeholder="请输入内容" busData="{{busData}}" valueKey="" value="" onInput="onInput" onBlur="onBlur" onFocus="onFocus" />
+
+  <eui-textarea title="禁用textarea" required="true" placeholder="请输入内容" valueKey="" disabled="{{true}}" value="默认值禁用" onInput="onInput" onBlur="onBlur" onFocus="onFocus" />
+
+  <eui-textarea title="错误textarea" required="true" placeholder="请输入内容" valueKey="" error="{{true}}" value="" onInput="onInput" onBlur="onBlur" onFocus="onFocus" />
+</view>

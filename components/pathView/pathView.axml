@@ -1,0 +1,12 @@
+<!--components/path-view/path-view.axml-->
+<view>
+  <view class="eui-path-mask">
+    <view class="eui-path-mask-search">
+      <input placeholder="搜索需要的节点" value="{{searchCode}}" onInput='getValue'/>
+      <text class="eui-path-mask-back" onTap="searchData">查找</text>
+      <text class="eui-path-mask-back" onTap="resetData">重置</text>
+    </view>
+    
+  </view>
+  <eui-tree value="{{normalValue}}"></eui-tree>
+</view>

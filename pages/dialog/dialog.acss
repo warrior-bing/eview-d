@@ -1,0 +1,14 @@
+.view-warp {
+  width: 100%;
+  margin: 15rpx;
+}
+.view-test-button {
+  width: 100%;
+  margin-bottom:40rpx;
+}
+.dialog-warp{
+  padding:20rpx;
+}
+.dialog-title{
+  margin-bottom:20rpx;
+}

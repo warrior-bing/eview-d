@@ -1,0 +1,5 @@
+<import src="../../components/toast/toast.axml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class="view-warp">
+  <eui-upload title="照片上传" uploadUrl="{{uploadUrl}}" border=true max="200" required="{{true}}" onGetImageUrl="onGetImageUrl" onRemoveImage="onRemoveImage" />
+</view>

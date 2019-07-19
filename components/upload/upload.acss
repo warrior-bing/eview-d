@@ -1,0 +1,109 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+.eui-upload-block-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.eui-upload-error {
+  border-bottom: 1rpx solid red;
+}
+.eui-upload-block-label {
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.eui-upload-block-label text:nth-child(2) {
+  padding-left: 10rpx;
+  color: #f56c6c;
+}
+.eui-upload {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.eui-upload-list {
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+  background: #f6f6f6;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #ebeaea;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+
+.eui-upload-list .image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.eui-icon-delete {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  z-index: 999;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.eui-upload-btn {
+  width: 140rpx;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c0c4cc;
+  background: #f6f6f6;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #ebeaea;
+  position: relative;
+  margin-bottom: 20rpx;
+  font-size: 50rpx;
+}
+
+.eui-icon-loading {
+  animation: btn-spin 0.8s linear infinite;
+  margin: 0 auto;
+}
+
+.eui-upload-loading {
+  width: 140rpx;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 20rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+
+.white {
+  background: #fff;
+}
+
+.border-none {
+  border-bottom: none;
+}
+
+.upload-label {
+  width: auto;
+}
+
+@keyframes btn-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,10 @@
+<view class="eui-global-block {{structures == 'upper' ? 'eui-view-upper' : ''}} {{componentErrorFlag ? 'eui-view-error' : ''}}">
+  <label class="eui-view-label">
+    <text style="{{`color: ${color};`}}">{{title}}</text>
+    <text class="eui-view-required" a:if="{{required}}">*</text>
+  </label>
+  <view class="eui-view-input gray {{structures == 'upper' ? 'eui-view-down' : ''}}" data-required="{{required}}" onTap='showValue'>
+    {{value ? value : placeholder}}
+    <text a:if="{{unit}}" class="eui-view-unit">{{unit}}</text>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-date-no-flex {
+  display: block;
+}
+.eui-date-lable {
+  color: #909399;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+  width: 200rpx;
+}
+
+.eui-date-box {
+  display: flex;
+  align-items: center;
+}
+
+.eui-date-upper {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0 20rpx 0; 
+  justify-content: space-between;
+}
+
+.eui-date-value {
+  padding-right: 10rpx;
+}
+
+.icon-date {
+  width: 40rpx;
+  margin-top: -5rpx;
+}
+
+.eui-date-required {
+  color: #ff2d2d;
+  padding-left: 15rpx;
+}
+.eui-date-icon {
+  color: #26a2ff;
+  padding-left: 10rpx;
+}
+
+.eui-date-error {
+  border-bottom: solid 1px #ff2d2d;
+}

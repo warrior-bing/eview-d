@@ -1,0 +1,44 @@
+<view>
+  <view class="eui-global-block {{componentErrorFlag ? 'eui-area-picker-error' : ''}}" onTap="showPicker">
+    <label class="eui-global-block-label">
+      <text>{{title}}</text>
+      <text a:if="{{required && !disabled}}">*</text>
+    </label>
+    <text class="eui-global-block-input eui-area-picker {{value && !disabled ? 'black' : 'gray'}}" data-required="{{required}}">
+      {{value ? value : (disabled ? '' : placeholder)}}
+    </text>
+    <!-- <image a:if="{{!disabled}}" class="icon-area-picker" mode="widthFix" src="/style/images/icon-right.png"/> -->
+    <view class="iconfont icon-right1 eui-icon-area-picker {{showPicker ? 'eui-picker-icon-rotate' : 'eui-picker-icon-normal'}}"  a:if="{{!disabled}}" ></view>
+  </view>
+  <view class="eui-mask-picker" a:if="{{!disabled && showPicker}}">
+    <view class="eui-pv-container">
+      <view class="eui-pv-title">
+        <text catchTap="onCancelValue">取消</text>
+        <text catchTap="onConfirmValue">确认</text>
+      </view>
+      <view class="pv-left" a:if="{{isArea == 1}}">
+        <picker-view value="{{valueArr}}" onChange="onChange">
+          <picker-view-column>
+            <view a:for="{{province}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view a:for="{{city}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view a:for="{{area}}">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+      <view class="pv-left" a:else>
+        <picker-view value="{{valueArr}}" onChange="onChange">
+          <picker-view-column>
+            <view a:for="{{province}}">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view a:for="{{city}}">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </view>
+  </view>
+</view>

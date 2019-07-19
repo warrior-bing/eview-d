@@ -1,0 +1,6 @@
+<view class="view-warp">
+  <eui-view structures="upper" title="view1view1view1view1view1view1view1view1view1view1view1view1view1view1view1view1" value="{{value1}}" onShowValue="onShowValue" />
+  <eui-view title="view2" value="{{value2}}"/>
+  <eui-view title="view3" value="{{value3}}"/>
+  <eui-view title="view4" value="{{value4}}" unit="元"/>
+</view>

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "textarea",
+  "usingComponents": {
+    "eui-textarea": "/components/textarea/textarea"
+  }
+}

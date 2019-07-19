@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "input",
+  "usingComponents": {
+    "eui-input": "/components/input/input",
+    "eui-view": "/components/view/view",
+    "eui-upload": "/components/upload/upload"
+  }
+}

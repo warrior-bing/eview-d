@@ -1,0 +1,56 @@
+/* 组件公共样式 */
+@import '../../style/acss/index.acss';
+
+.eui-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, .5);
+  pointer-events: auto;
+}
+.eui-dialog-container {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background: #fff;
+  border-radius: 10rpx;
+  padding-bottom: 10rpx;
+}
+.eui-dialog-title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(53, 169, 255);
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx 10rpx 0 0;
+  position: relative;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.eui-dialog-title-btn {
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.eui-dialog-close-btn {
+  position: absolute;
+  right: 30rpx;
+  font-size: 24rpx;
+}
+.eui-dialog-title-text {
+  font-size: 30rpx;
+  color: #333;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+.eui-dialog-content {
+  overflow-y: scroll;
+}

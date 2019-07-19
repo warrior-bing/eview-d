@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "popup",
+  "usingComponents": {
+    "eui-popup": "/components/popup/popup",
+    "eui-view": "/components/view/view"
+  }
+}

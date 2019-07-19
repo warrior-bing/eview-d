@@ -1,0 +1,3 @@
+<view class="eui-tab-warp">
+  <view class="{{item.name === current ? 'eui-tab-item eui-tab-active' : 'eui-tab-item'}}" a:for="{{data}}" data-value="{{item.name}}" data-index="{{index}}" onTap="tabItemTap">{{item.label}}</view>
+</view>
